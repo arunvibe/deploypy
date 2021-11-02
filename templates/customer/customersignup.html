@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+{% load widget_tweaks %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style>
+form{
+ margin: 40px;
+     }
+.move{
+width: 460px;
+  height: 800px;
+  border: 1px solid black;
+  margin-left:37%;
+  border-radius:20px;
+ }
+
+body{
+background-color:whitesmoke
+}
+
+.btn:hover {background-color: blue;
+}
+  </style>
+  </head>
+  <body>
+    {% include "insurance/navbar.html" %}
+
+<br><br><br>
+<h3 style="text-align: center;color:green;">Register Here</h3>
+    <div class="move" >
+<form method="POST" autocomplete="off" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div >
+      <div class="form-group col-md-10">
+        <label for="username">Username</label>
+        {% render_field userForm.username|attr:'required:true'  class="form-control" placeholder="username" %}
+      </div>
+      <div class="form-group col-md-10">
+        <label for="inputPassword4">Password</label>
+        {% render_field userForm.password|attr:'required:true'  class="form-control" placeholder="password" %}
+      </div>
+    </div>
+
+    <div >
+        <div class="form-group col-md-10">
+          <label for="first_name">First Name</label>
+          {% render_field userForm.first_name|attr:'required:true'  class="form-control" placeholder="First Name" %}
+        </div>
+        <div class="form-group col-md-10">
+          <label for="last_name">Last Name</label>
+          {% render_field userForm.last_name|attr:'required:true'  class="form-control" placeholder="Last Name" %}
+        </div>
+      </div>
+
+      <div >
+        <div class="form-group col-md-10">
+          <label for="mobile">Mobile</label>
+          {% render_field customerForm.mobile|attr:'required:true'  class="form-control" placeholder="Mobile" %}
+        </div>
+        <div class="form-group col-md-10">
+          <label for="address">Address</label>
+          {% render_field customerForm.address|attr:'required:true'  class="form-control" placeholder="Address" %}
+        </div>
+      </div>
+
+        <div class="form-group col-md-10">
+          <label for="profile_pic">Profile Picture</label>
+          {% render_field customerForm.profile_pic|attr:'required:true' class="form-control" placeholder="" %}
+        </div>
+<br><br>
+    <button type="submit" class="btn" style="background-color:green;color:white;margin-left:100px">Register Here</button>
+  </form>
+</div>
+
+<br><br>
+
+
+
+  </body>
+</html>

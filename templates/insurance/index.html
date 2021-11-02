@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+{% load static %}
+{% include "insurance/navbar.html" %}
+<html lang="en" dir="ltr">
+
+<style>
+        .xyz{
+          margin-bottom: 0px;
+          background-image: url('{% static "image/ins.jpg" %}');
+          background-size: cover;
+
+        }
+
+.btn{
+    background: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+.btn:hover {background-color: white;
+
+}
+/******* google font ****/
+@import url('https://fonts.googleapis.com/css?family=Poppins|Ubuntu&display=swap');
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background: #fff;
+    font-family: 'Ubuntu',sans-serif;
+}
+.services
+{
+    display: block;
+    position: relative;
+    padding-bottom:5%;
+
+}
+.container
+{
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.services-title
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+.services-box
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: -15px;
+}
+
+.title
+{
+    margin-left: 15px;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom:40px;
+    text-align: center;
+    top: 26px;
+
+}
+.services-title h2 span
+{
+    color: #3c44a9;
+}
+.services-title h2
+{
+    margin-top: -10px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #333;
+    font-family:'Ubuntu',sans-serif;
+}
+
+.box
+{
+    position: relative;
+    width: 100%;
+
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 33.333333%;
+}
+.ser-box
+{
+    padding-top:5%;
+    margin-top: 75px;
+    padding-bottom: 30px;
+    padding: 0 60px;
+    min-height: 198px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 0 25px 0 rgba(20,27,202,.17);
+}
+
+.ser-box .icon
+{
+    margin-bottom: 0;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.ser-box h4
+{
+padding-top:6%;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    color: #3c44a9;
+    margin-top: -10px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.ser-box p
+{
+    color: #61648e;
+    line-height: 24px;
+    margin-top: 20px;
+    font-family:'Ubuntu',sans-serif;
+}
+.ser-box:hover
+{
+    box-shadow: 0 0 25px 0 rgba(20,27,201,.05);
+    cursor: pointer;
+    background-image:
+    linear-gradient(-45deg, #34b5bf 0%, #210c59 100%);
+}
+
+.ser-box:hover h4,
+.ser-box:hover p
+{
+    color: #fff;
+}
+
+
+
+.services-box .box:nth-child(1) .ser-box:hover
+{
+    background-image:
+    linear-gradient(-45deg, #34b5bf 0%, #210c59 100%);
+}
+
+</style>
+<body>
+
+<br>
+      <p>Insurance</p>
+<section id="section-jumbotron" style="margin-bottom: 0px;" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center xyz">
+  <div class="container text-center" id="words" style="color:white">
+  <p style="font-size:40px"> Securing the future of the communities <p>we serve
+      Personal Solutions</p><p> Business Solutions Health & LifeSolutions.</p>
+    </p>
+      <a class='btn' href="customer/customerclick"  type="submit">Lets Connect</a>
+      <br><br><br><br><br><br><br>
+  </div>
+</section>
+<section class="services">
+    <div class="container">
+        <div class="services-title">
+            <div class="title">
+                <h2><span> Our </span> Services</h2>
+            </div>
+        </div>
+
+        <div class="services-box">
+
+            <div class="box">
+                <div class="ser-box">
+                    <div class="icon">
+
+                    </div>
+                     <h4>Govt policy</h4>
+                     <p>
+Converting casual online buyers into loyal customers can build an optimised online store using popular platforms and frameworks</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="ser-box">
+                    <div class="icon">
+
+                    </div>
+                     <h4>Health policy</h4>
+                     <p>
+An interactive web application readily amplifies user engagement. Our user-centred web apps are feature-rich, intuitive, and perform exceedingly well..</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="ser-box">
+                    <div class="icon">
+
+                    </div>
+                     <h4>Life Policy</h4>
+                     <p>SQL database services for application development, business intelligence, and support services including data architecture and administration. </p>
+                </div>
+            </div>
+
+</section>
+<div class="jumbotron" style="margin-top: 0px;margin-bottom: 0px;">
+
+<h3 class="text-center"><i>It not about Money ,Its About Saving Life,Lets save eachother</i></h3>
+
+
+  <h4 class="text-center" style="padding-left: 40%;"><i>-Arun</i> </h4>
+
+</div>
+  {% include "insurance/footer.html" %}
+
+
+</body>
+
+</html>
